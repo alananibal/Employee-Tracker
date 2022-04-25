@@ -21,10 +21,13 @@ VALUES
     ('CEO', '1000000', 3);
 
 INSERT INTO employee
-    (title, salary, department_id)
+    (first_name, last_name, role_id)
 VALUES
-    ('Fulano', 'Da Silva Saurus', 1, 3),
-    ('Cicrano', 'Van Schudruts', 2, 3),
-    ('Jojo', 'Ma', 3, 9);
+    ('Fulano', 'Da Silva Saurus', 1),
+    ('Cicrano', 'Van Schudruts', 2 ),
+    ('Jojo', 'Ma', 3);
+
+
+UPDATE employee SET manager_id = 3 where id = 1;
 
 
